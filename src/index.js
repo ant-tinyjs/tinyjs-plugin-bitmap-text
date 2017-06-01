@@ -15,4 +15,9 @@ import BitmapText from './BitmapText';
 const loader = Tiny.loaders.Loader;
 loader.addTinyMiddleware(bitmapFontParser);
 
+// 覆盖 Loader
+if (Tiny.Loader) {
+  Tiny.Loader = loader ? new loader() : null; // eslint-disable-line
+}
+
 module.exports = BitmapText;

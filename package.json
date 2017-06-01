@@ -1,6 +1,6 @@
 {
   "name": "tinyjs-plugin-bitmap-text",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "fangjun.yfj",
   "description": "Create a line or multiple lines of text using bitmap font",
   "keywords": [
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@gitlab.alipay-inc.com:tiny-plugin/tinyjs-plugin-bitmap-text.git"
+    "url": "git@gitlab.alipay-inc.com:tiny-plugins/tinyjs-plugin-bitmap-text.git"
   },
   "main": "src/index.js",
   "files": [
