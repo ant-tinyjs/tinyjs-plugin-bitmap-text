@@ -1,18 +1,19 @@
 /**
  * A BitmapText object will create a line or multiple lines of text using bitmap font. To
  * split a line you can use '\n', '\r' or '\r\n' in your string. You can generate the fnt files using:
- *
+ * <br>
+ * <br>
  * A BitmapText can only be created when the font is loaded
- *
- * ```js
- * // in this case the font is in a file called 'desyrel.fnt'
- * let bitmapText = new Tiny.BitmapText("text using a fancy font!", {font: "35px Desyrel", align: "right"});
- * ```
- *
- * http://www.angelcode.com/products/bmfont/ for windows or
+ * <br>
+ * http://www.angelcode.com/products/bmfont/ for windows
+ * <br>
  * http://www.bmglyph.com/ for mac.
  *
- * @class BitmapText
+ * @example
+ *
+ * // in this case the font is in a file called 'desyrel.fnt'
+ * let bitmapText = new Tiny.BitmapText("text using a fancy font!", {font: "35px Desyrel", align: "right"});
+ *
  * @extends Tiny.Container
  */
 class BitmapText extends Tiny.Container {

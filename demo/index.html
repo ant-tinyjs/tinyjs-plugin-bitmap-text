@@ -13,11 +13,31 @@ html, body, p, div {margin:0;padding:0;}
 </head>
 <body>
 
-<script src="http://tinyjs.net/libs/tiny.debug.js"></script>
+<script src="https://a.alipayobjects.com/g/tiny/tiny/1.0.2/tiny.js"></script>
 <script src="../dist/index.js"></script>
 
 <script type="text/javascript">
-  console.log(Tiny.BitmapText);
+  var app = new Tiny.Application({
+    width: window.innerWidth,
+    height: window.innerHeight,
+    fixSize: true,
+    renderOptions: {
+      backgroundColor: 0x2a3145,
+    },
+  });
+  var loader = new Tiny.loaders.Loader();
+  loader.add([{
+    name: 's_font_fnt',
+    url: 'https://gw.alipayobjects.com/as/g/tiny/resources/1.0.0/bitmaptext/FontEng.xml',
+  }]).load(function () {
+    var fontText = new Tiny.BitmapText('fnt fonts are supported!\ncreated by \n"Tiny.BitmapText()\n1234567890"', {
+      font: '32px Impact',
+      tint: '0xff6600',
+    });
+
+    fontText.setPosition(30, 30);
+    app.run(fontText);
+  });
 </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 # tinyjs-plugin-bitmap-text
 
-> Create a line or multiple lines of text using bitmap font
+> 位图文字
 
 ## 查看demo
 
@@ -24,17 +24,24 @@
 
 引用 Tiny.js 源码
 ``` html
-<script src="http://tinyjs.net/libs/tiny.debug.js"></script>
+<script src="https://a.alipayobjects.com/g/tiny/tiny/1.0.2/tiny.js"></script>
 ```
 ``` js
-require('tinyjs-plugin-bitmap-text');
+var BitmapText = require('tinyjs-plugin-bitmap-text');
 // 或者
 // import BitmapText from 'tinyjs-plugin-bitmap-text';
+var loader = new Tiny.loaders.Loader();
+loader.add([{
+  name: 's_font_fnt',
+  url: 'https://gw.alipayobjects.com/as/g/tiny/resources/1.0.0/bitmaptext/FontEng.xml',
+}]).load(function () {
+  var fontText = new BitmapText('fnt fonts are supported!\ncreated by \n"Tiny.BitmapText()\n1234567890"', {
+    font: '32px Impact',
+    tint: '0xff6600',
+  });
+  // container.addChild(fontText);
+});
 ```
 
 ## 依赖
 - `Tiny.js`: [Link](http://tinyjs.net/#/docs/api)
-
-## API文档
-
-TODO
