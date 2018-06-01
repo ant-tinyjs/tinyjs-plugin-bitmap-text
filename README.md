@@ -4,7 +4,7 @@
 
 ## 查看demo
 
-`demo/index.html`
+http://tinyjs.net/plugins/tinyjs-plugin-bitmap-text.html#demo
 
 ## 引用方法
 
@@ -44,8 +44,8 @@ loader.add([{
 ```
 
 ## 依赖
-- `Tiny.js`: [Link](http://tinyjs.net/#/docs/api)
+- `Tiny.js`: [Link](http://tinyjs.net/api)
 
 ## API文档
 
-http://tinyjs.net/#/plugins/tinyjs-plugin-bitmap-text/docs
+http://tinyjs.net/plugins/tinyjs-plugin-bitmap-text.html#docs
