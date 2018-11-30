@@ -20,4 +20,4 @@ if (Tiny.Loader) {
   Tiny.Loader = loader ? new loader() : null; // eslint-disable-line
 }
 
-module.exports = BitmapText;
+export default BitmapText;
