@@ -15,8 +15,9 @@ import BitmapText from './BitmapText';
 const loader = Tiny.loaders.Loader;
 loader.addTinyMiddleware(bitmapFontParser);
 
-// 覆盖 Loader
-if (Tiny.Loader && Tiny.Loader !== Tiny.loaders.Loader) {
+// Tiny1 覆盖 Loader
+// Tiny2 中 Tiny.Loader = Tiny.loaders.Loader，无需覆盖
+if (Tiny.Loader && Tiny.Loader !== loader) {
   Tiny.Loader = loader ? new loader() : null; // eslint-disable-line
 }
 
