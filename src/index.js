@@ -16,7 +16,7 @@ const loader = Tiny.loaders.Loader;
 loader.addTinyMiddleware(bitmapFontParser);
 
 // 覆盖 Loader
-if (Tiny.Loader) {
+if (Tiny.Loader && Tiny.Loader !== Tiny.loaders.Loader) {
   Tiny.Loader = loader ? new loader() : null; // eslint-disable-line
 }
 
