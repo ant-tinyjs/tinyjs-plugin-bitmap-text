@@ -1,6 +1,6 @@
 {
   "name": "tinyjs-plugin-bitmap-text",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "fangjun.yfj",
   "description": "Create a line or multiple lines of text using bitmap font",
   "keywords": [
